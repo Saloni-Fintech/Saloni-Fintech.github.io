@@ -1,0 +1,255 @@
+@font-face
+{
+	font-family: Montserrat;
+	src: url(Montserrat-Regular.ttf);
+}
+@font-face
+{
+	font-family: NameFamily;
+	src: url(LHANDW.TTF)
+}
+@keyframes spina 
+{
+    0% 
+    {
+    	transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+    100% 
+    {
+       	transform: translate3d(-50%, -50%, 0) rotate(360deg);
+   	}
+}
+@keyframes spinb 
+{
+    0% 
+    {
+    	transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+    100% 
+    {
+       	transform: translate3d(-50%, -50%, 0) rotate(-360deg);
+   	}
+}
+.spin::before 
+{
+    animation: 3s linear infinite spina;
+    animation-play-state: inherit;
+    border: solid 3px #cfd0d1;
+    border-bottom-color: transparent;
+    border-left-color: white; 
+    border-right-color: white;
+    border-top-color: transparent; 
+    border-radius: 50%;
+    content: "";
+    height: 490px;
+    width: 490px;
+    position: absolute;
+    top: 338px;
+    left: 395px;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform;
+}
+
+.spin2::before 
+{
+    animation: 5s linear infinite spinb;
+    animation-play-state: inherit;
+    border: solid 3px #cfd0d1;
+    border-bottom-color: transparent;
+    border-left-color: white; 
+    border-right-color: white;
+    border-top-color: transparent; 
+    border-radius: 50%;
+    content: "";
+    height: 460px;
+    width: 460px;
+    position: absolute;
+    top: 338px;
+    left: 395px;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform;
+}
+
+.spin3::before 
+{
+    animation: 7s linear infinite spina;
+    animation-play-state: inherit;
+    border: solid 3px #cfd0d1;
+    border-bottom-color: transparent;
+    border-left-color: white; 
+    border-right-color: white;
+    border-top-color: transparent; 
+    border-radius: 50%;
+    content: "";
+    height: 430px;
+    width: 430px;
+    position: absolute;
+    top: 338px;
+    left: 395px;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform;
+}
+
+body{
+	background-color: black;
+	font-family: 'Montserrat';
+}
+h1{
+	font-family: 'NameFamily';
+	color: white;
+}
+h1:hover{
+	color: blue;
+	transition: 1s;
+}
+h2{
+	font-family: 'NameFamily';
+	color: white;
+	font-size: 300%;
+	letter-spacing: 7px;
+}
+h4{
+	font-weight: bold;
+	color: white;
+	font-size: 200%;
+	letter-spacing: 7px;
+}
+input{
+	margin-bottom: 15px;
+}
+#hx{
+	color:white;
+	letter-spacing: 15px;
+}
+#px{
+	color:white;
+	letter-spacing: 7px;
+}
+
+.dropdown-menu{
+	background-color: black;
+}
+.dropdown-menu{
+	margin-top: 30px;
+}
+.dropdown-menu li a:hover {
+	background-color:rgba(0, 0, 0, 0.2);
+  }
+.bottomlink
+{
+	font-size: 150%; 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: black;
+}
+.bottomlink:hover
+{
+	color: blue;
+	transition: 1s;
+}
+
+
+h6{
+	font-weight: bold;
+	font-size: 200%;
+	color: darkcyan;
+}
+button{
+	padding: 120px;
+	margin-top: 20px;
+	background: transparent;
+	color: white;
+}
+.cont{
+	font-size: 120%;
+	color: white;
+}
+.cont:hover{
+	color: white;
+	text-decoration: none;
+}
+.cont:active{
+	color: white;
+	text-decoration: none;
+}
+.cont:visited{
+	color: white;
+	text-decoration: none;
+}
+.btn:hover{
+	color: white;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-color: white;
+	border-radius: 0px;
+	transition: 0.25s;
+}
+.btn:focus{
+	color:white;
+}
+
+.GGMU{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 10px;
+	border-radius: 12px;
+	border: 2px solid #fff;
+	margin-top: 10px;
+}
+.GGMU:hover{
+	text-decoration: none;
+	background-color: white;
+	color: black;
+	transition: 1s;
+}
+.star {
+    visibility: hidden;
+    float: right;
+    width: 80%;
+    height: 150%;
+}
+
+.fadeIn {
+    -webkit-animation: animat_show 0.8s;
+     animation: animat_show 0.8s;
+     visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+.well{
+	background-color: black;
+	color: white;
+	border-color: black;
+}
+.well:hover{
+	color: #00ccff;
+	transition: 1s;
+}
+.table
+{
+	color: white;
+}
+td:hover
+{
+	color: #00ccff;
+	transition: 1s;
+}
+h3{
+	font-family: "Helvetica";
+	font-size: 250%;
+	font-weight: bold;
+	color: white;
+}
+h3:hover{
+	color: #00ccff;
+	transition: 0.75s;
+}
+
+*{box-sizing: border-box;}
+
